@@ -1,0 +1,53 @@
+{
+  "plugins": [
+    "meteor"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:meteor/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "meteor": true,
+    "node": true
+  },
+  "rules": {
+      "no-underscore-dangle": 0,
+  },
+  "globals": {
+    // Collections
+    "Messages": true,
+    "Goals": true,
+    "Events": true,
+    // Meteor Core
+    "Meteor": false,
+    "DDP": false,
+    "Mongo": false,
+    "Session": false,
+    "Accounts": false,
+    "Template": false,
+    "Blaze": false,
+    "Match": false,
+    "check": false,
+    "Tracker": false,
+    "ReactiveVar": false,
+    "EJSON": false,
+    "HTTP": false,
+    "Email": false,
+    "Assets": false,
+    "Handlebars": false,
+    // https://github.com/meteor/meteor/wiki/Handlebars
+    "Package": false,
+    "App": false,
+    //mobile-config.js
+    "Npm": false,
+    // Dependencies
+    "_": false,
+    "BlazeLayout": false,
+    "FlowRouter": false,
+    "moment": false,
+    "SimpleSchema": false
+  }
+}

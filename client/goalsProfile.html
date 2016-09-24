@@ -1,0 +1,21 @@
+<template name="goalsProfile">
+
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#achievements" role="tab" data-toggle="tab">My Progress</a></li>
+    <li role="presentation"><a href="#goals" role="tab" data-toggle="tab">My Goals List</a></li>
+    <li role="presentation"><a href="#new-goal" role="tab" data-toggle="tab">Build a New Goal</a></li>
+  </ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="achievements">
+    {{> progress}}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="goals">
+    {{> goals}}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="new-goal">
+    {{> newGoal}}
+  </div>
+</div>
+
+</template>

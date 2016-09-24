@@ -1,0 +1,48 @@
+<template name="messages">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            "{{goalName}}" : Goal Discussion
+          </div>
+          <div class="panel-body">
+            <ul class="media-list">
+              <!-- message template -->
+              {{#each messagesOption}}
+                {{> message}}
+              {{/each}}
+            </ul>
+          </div>
+          <!-- message textbox -->
+          <form class="new-message">
+            <div class="panel-footer">
+              <div class="input-group">
+                <input type="text" name="my_text" class="form-control" placeholder="Enter Message" />
+                <span class="input-group-btn">
+                  <button class="btn btn-info send" type="submit">Send</button>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="message">
+  <li class="media">
+    <div class="media-body">
+      <div class="media">
+        <div class="media-body" >
+          {{text}}
+          <br />
+          <!-- user information -->
+          <small class="text-muted"><strong>{{username}}</strong> | {{createdAt}}</small>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </li>
+</template>

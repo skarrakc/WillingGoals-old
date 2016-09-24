@@ -1,0 +1,19 @@
+<template name="bodyLayout">
+  <div class="principal">
+       {{> loginButtons}}
+	   {{> Template.dynamic template=main}}
+
+  </div>
+</template>
+
+<template name="index">
+  <div class="jumbotron text-center">
+    <img width="50" src="/logo.png" alt="logo">
+    <h2>Welcome to MCII App!</h2>
+    <p>
+      <a class="btn btn-success" href="#" role="button">Learn about MCII</a>
+      <a class="btn btn-primary" href="{{pathFor 'goalsProfile'}}" role="button">Go to Your MCII Profile</a>
+    </p>
+  </div>
+</template>
+

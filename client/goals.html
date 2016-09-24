@@ -1,0 +1,7 @@
+<template name="goals">
+  {{#each goalsOption}}
+    {{> goal}}
+  {{else}}
+    <p class="alert alert-info">No Goal.</p>
+  {{/each}}
+</template>

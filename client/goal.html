@@ -1,0 +1,42 @@
+<template name="goal">
+  <div class="panel panel-default pizza">
+    <div class="panel-body">
+      <p class="clearfix">
+        <strong class="pull-left">{{name}} &mdash; {{status}}</strong>
+      </p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Positive Aspects</th>
+            <th>Difficulty Level</th>
+            <th>Obstacles</th>
+            <th>Intentions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{MCAttributes.positiveAspects}}</td>
+            <td>{{MCAttributes.difficulty}}</td>
+            <td>{{IIAttributes.obstacles}}</td>
+            <td>{{IIAttributes.intentions}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="btn-group" role="group">
+        <div class="btn-group" role="group">
+        {{#unless achieving}}
+          <button type="button" class="btn btn-success toggle-achieve">Enable</button>
+        {{else}}
+          <button type="button" class="btn btn-warning toggle-achieve">Disable </button>
+        {{/unless}}
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger delete">Delete</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
